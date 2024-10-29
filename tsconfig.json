@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "commonjs",
+        "lib": [
+            "esnext"
+        ], // Remove "dom" if not needed
+        "outDir": "./dist",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "sourceMap": true // Enable source maps for debugging
+    },
+    "include": [
+        "**/*.ts" // Include all TypeScript files in the project
+    ],
+    "exclude": [
+        "node_modules" // Exclude node_modules directory
+    ]
+}

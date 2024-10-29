@@ -1,0 +1,40 @@
+// {
+//     // Use IntelliSense to learn about possible attributes.
+//     // Hover to view descriptions of existing attributes.
+//     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "type": "node",
+//             "request": "launch",
+//             "name": "Launch Program",
+//             "skipFiles": [
+//                 "<node_internals>/**"
+//             ],
+//             "program": "${workspaceFolder}/testfour.ts",
+//             "outFiles": [
+//                 "${workspaceFolder}/**/*.js"
+//             ]
+//         }
+//     ]
+// }
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch TypeScript",
+            "program": "${workspaceFolder}/testfour.ts", // Path to your TypeScript file
+            "runtimeArgs": [
+                "-r",
+                "ts-node/register" // Register ts-node to run TypeScript
+            ],
+            "console": "integratedTerminal", // Use the integrated terminal for console output
+            "outFiles": [
+                "${workspaceFolder}/dist/**/*.js" // Adjust if you have a different output directory
+            ],
+            "sourceMaps": true // Enable source maps for better debugging
+        }
+    ]
+}
